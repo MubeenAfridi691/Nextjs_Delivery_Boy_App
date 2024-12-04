@@ -1,21 +1,83 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*:focus{
+    outline: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+table , th, td {
+    border: 1px solid black;
+}
+.button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
   }
-}
+  .background-img{
+    background-image: url('https://t3.ftcdn.net/jpg/05/89/70/46/360_F_589704609_b84XoVDaeopctL2Iz0lG4IQT86Dzm7xz.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+height: 320px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ .input-container{
+  background-color: hsl(208, 100%, 97%);
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 50px;
+  position: relative;
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+ }
+ .input-search{
+    width: 80%;
+    padding: 12px;
+    /* margin: 8px 0; */
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+border-left: 1px solid hsl(180, 3%, 7%);
+
+
+ }
+ .input-location{
+  
+    padding: 12px ;
+    /* margin: 8px 0; */
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+border-left: 1px solid hsl(208, 100%, 97%);
+width: 20%;
+
+ }
+.location-place{
+   text-align: left;
+   position: absolute;
+ top: 45px;
+   left: 0px;
+   font-size: 12px;
+   background-color: #fff;
+
+
+}
+.location-place li {
+    list-style: none;
+    width: 180px;
+border-bottom: 1px solid black;
+    cursor: pointer;
+    padding: 5px;
+
 }

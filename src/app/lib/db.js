@@ -1,0 +1,1 @@
+export const dbconnection = 'mongodb+srv://admin:admin@cluster0.igdfg.mongodb.net/nextjs?retryWrites=true&w=majority&appName=Cluster0'
